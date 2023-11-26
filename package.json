@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm start",
+    "clientIstall": "cd client && npm i",
+    "serverIstall": "cd server && npm i",
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "app": "concurrently \"npm run clientIstall\" \"npm run serverIstall\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
